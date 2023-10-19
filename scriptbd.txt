@@ -1,0 +1,22 @@
+
+CREATE DATABASE loja;
+
+
+USE loja;
+
+CREATE TABLE produto (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    quantidade INT,
+    descricao VARCHAR(255),
+    preco DOUBLE(10, 2)
+);
+
+
+CREATE TABLE admlogin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255),
+    senha VARCHAR(255)
+);
+
+SELECT * FROM produto;
+
