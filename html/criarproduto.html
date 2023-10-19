@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="/css/global.css">
-<link rel="stylesheet" href="/css/loginadm.css">
+<link rel="stylesheet" href="/css/criarproduto.css">
 <link rel="stylesheet" href="/css/normalize.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,19 +16,24 @@
 <body>
 
     <header class="cabecalho">
-
-        <img src="/images/FlashLimp-removebg-preview.png" alt="logo flashlimp" class="logoimg" height="120" width="120">
-        <button type="button" href="#">Login</button>
+        <a href="/html/index.html">
+            <img src="/images/FlashLimp-removebg-preview.png" alt="logo flashlimp" class="logoimg" height="120" width="120">
+        </a>
+        <h3>Bem vindo, Administrador</h3>
     </header>
     <section class="faixa-1">
         <div class="f1conteudo">
             <form action="#" method="post">
-                <h1>Login</h1>
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email">
-                <label for="senha">Senha</label>
-                <input type="password" name="senha" id="senha">
-                <input type="submit" value="Login">
+                <h1>Criar produto</h1>
+                <label for="name">Nome do produto</label>
+                <input type="text">
+                <label for="name">Descrição do Produto</label>
+                <input type="text">
+                <label for="name">Preço do produto</label>
+                <input type="number" id="doubleInput" name="doubleInput" step="any" required>
+                <label for="imageUpload">Foto do produto</label>
+                <input type="file" id="imageUpload" name="image" accept="image/*">
+                <input type="submit" value="Inserir produto">
             </form>
         </div>
 
